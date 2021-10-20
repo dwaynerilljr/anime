@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import ReviewForm from './components/ReviewForm';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
     const [user, setUser] = useState({
@@ -10,10 +12,9 @@ function App() {
       password: ''
     });
   return (
-    <div>
+    <>
       <Router>
-        <li><Link to={'/login'}>Login</Link></li>
-        <li><Link to={'/write-review'}>Write Review</Link></li>
+        <Navbar />
         <Switch>
           <Route path='/login'> 
             <LoginForm setUser={setUser} user={user} />
@@ -21,10 +22,13 @@ function App() {
           <Route path='/write-review'>
             <ReviewForm user={user} />
           </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
         </Switch>
       </Router>
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;

@@ -9,11 +9,13 @@ const LoginForm = ( {setUser, user} ) => {
     }
 
     return (
-        <form action="submit" onChange={handleChange} onSubmit={handleSubmit}>
-            <label htmlFor="username">Enter username:</label>
-            <input type="text" name="username" id="" defaultValue={user.username} />
-            <button type="submit">Login</button>
-        </form>
+        <div className="w-screen flex justify-center">
+            <form className="flex flex-col" action="submit" id="review-form" onChange={handleChange} onSubmit={handleSubmit}>
+                <label htmlFor="username">Enter username:</label>
+                <input type="text" name="username" id="" defaultValue={user.username} />
+                <button className="self-start p-2 bg-teal hover:bg-blue text-white rounded-sm" type="submit">Login</button>
+            </form>
+        </div>
     )
 }
 
