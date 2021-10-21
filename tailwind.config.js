@@ -5,7 +5,15 @@ module.exports = {
     extend: {
       colors: {
         'teal': '#10a3a2',
-        'blue': '#5d83c0'
+        'gentle-blue': '#5d83c0',
+        'light-steel': '#B0B3B1',
+        'dark-blue': '#3A416F'
+      },
+      height: {
+        'h-half': '50vh'
+      },
+      fontFamily: {
+        'roboto': ["'Roboto', 'sans'"]
       }
     },
   },
