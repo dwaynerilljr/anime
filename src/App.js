@@ -8,6 +8,8 @@ import TopAnime from './components/TopAnime';
 import RegisterPage from './components/RegisterPage';
 import { ANIMES as animes } from './animes';
 import AnimeSelection from './components/AnimeSelection';
+import DragonBallZ from './components/DragonBallZ';
+import KaguyaSama from './components/KaguyaSama';
 
 function App() {
     const [user, setUser] = useState({
@@ -27,14 +29,20 @@ function App() {
           <Route path='/login'> 
             <LoginForm setUser={setUser} user={user} />
           </Route>
-          <Route path='/anime'>
+          <Route exact path='/anime'>
             {/* <ReviewForm user={user} /> */}
             <AnimeSelection animes={animes} />
+          </Route>
+          <Route path='/anime/0'>
+            <DragonBallZ user={user} animes={animes} />
+          </Route>
+          <Route path='/anime/1'>
+            <KaguyaSama animes={animes} user={user} />
           </Route>
           <Route path='/register'>
             <RegisterPage />
           </Route>
-          <Route path='/'>
+          <Route exact path='/'>
             <Home />
             <TopAnime animes={animes} />
           </Route>
