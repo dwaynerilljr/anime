@@ -9,7 +9,7 @@ import RegisterPage from './components/RegisterPage';
 import { ANIMES as animes } from './animes';
 import AnimeSelection from './components/AnimeSelection';
 import DragonBallZ from './components/DragonBallZ';
-import KaguyaSama from './components/KaguyaSama';
+import Footer from './components/Footer';
 
 function App() {
     const [user, setUser] = useState({
@@ -33,11 +33,8 @@ function App() {
             {/* <ReviewForm user={user} /> */}
             <AnimeSelection animes={animes} />
           </Route>
-          <Route path='/anime/0'>
+          <Route path="/anime/show/:id">
             <DragonBallZ user={user} animes={animes} />
-          </Route>
-          <Route path='/anime/1'>
-            <KaguyaSama animes={animes} user={user} />
           </Route>
           <Route path='/register'>
             <RegisterPage />
@@ -48,6 +45,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </>
   )
 }

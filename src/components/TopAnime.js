@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TopAnime = ({ animes }) => {
     return (
         <div className="grid px-5">
@@ -8,7 +10,7 @@ const TopAnime = ({ animes }) => {
                         return (
                             <div className="flex flex-col items-center">
                                 <p className="text-xl mb-2">{anime.name}</p>
-                                <img src={anime.image} className="h-full cursor-pointer" alt="" />
+                                <Link to={`/anime/show/${anime.id}`}><img src={anime.image} className="h-h-half hover:opacity-60" alt="" /></Link>
                             </div>
                         )
                     }

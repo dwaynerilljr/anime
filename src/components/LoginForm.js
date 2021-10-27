@@ -9,7 +9,7 @@ const LoginForm = ( {setUser, user} ) => {
     }
 
     return (
-        <div className="h-screen flex flex-col items-center justify-center" id="sign-in">
+        <div className="h-screen flex flex-col items-center justify-center pt-52" id="sign-in">
             <form className="flex h-h-half items-center text-xl bg-white text-teal border-2 border-teal flex-col w-2/6 p-4 rounded-md" action="submit" id="review-form" onChange={handleChange} onSubmit={handleSubmit}>
                 <h1 className="text-3xl text-gentle-blue"><strong>Sign in</strong></h1>
                 <div className="flex flex-col w-4/6">

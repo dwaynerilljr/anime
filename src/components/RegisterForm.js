@@ -1,8 +1,13 @@
 const RegisterForm = () => {
+
+    const handleSubmit = (e) => {
+        
+    }
+
     return (
-        <div className="h-screen flex flex-col items-center justify-center" id="sign-in">
+        <div className="h-screen pt-52 flex flex-col items-center justify-center" id="sign-in">
             <form className="flex items-center text-xl bg-white text-teal border-2 border-teal flex-col w-2/6 p-4 rounded-md" action="submit" id="review-form">
-                <h1 className="text-4xl text-gentle-blue mb-4"><strong>Register to RateThatAnime!</strong></h1>
+                <h1 className="text-3xl text-gentle-blue mb-4"><strong>Register to RateThatAnime!</strong></h1>
                 <div className="flex flex-col w-4/6 mb-3">
                     <label htmlFor="username">Username</label>
                     <input className="rounded-md border-2 border-gentle-blue p-1" type="text" name="username" id="" />

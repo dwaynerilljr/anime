@@ -10,10 +10,14 @@ module.exports = {
         'dark-blue': '#3A416F'
       },
       height: {
-        'h-half': '50vh'
+        'h-half': '50vh',
+        '60': '60px'
       },
       fontFamily: {
         'roboto': ["'Roboto', 'sans'"]
+      },
+      padding: {
+        '52': '64px'
       }
     },
   },
