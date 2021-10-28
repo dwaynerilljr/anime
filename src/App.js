@@ -10,6 +10,7 @@ import { ANIMES as animes } from './animes';
 import AnimeSelection from './components/AnimeSelection';
 import DragonBallZ from './components/DragonBallZ';
 import Footer from './components/Footer';
+import UploadForm from './components/UploadForm';
 
 function App() {
     const [user, setUser] = useState({
@@ -42,6 +43,9 @@ function App() {
           <Route exact path='/'>
             <Home />
             <TopAnime animes={animes} />
+          </Route>
+          <Route exact path='/admin/upload'>
+            <UploadForm />
           </Route>
         </Switch>
       </Router>

@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         'teal': '#10a3a2',
-        'gentle-blue': '#5d83c0',
+        'gentle-blue': '#F72585',
         'light-steel': '#B0B3B1',
-        'dark-blue': '#3A416F'
+        'dark-blue': '#7209b7'
       },
       height: {
         'h-half': '50vh',

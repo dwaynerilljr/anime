@@ -9,7 +9,7 @@ const DragonBallZ = ({user, animes}) => {
     const [reviewArr, setReviewArr] = useState(animes[Number(id)].comments);
     
     return (
-        <div className="h-screen grid grid-cols-6 pt-52">
+        <div className="grid grid-cols-6 pt-52">
             <div className='grid grid-cols-3 col-start-2 col-span-4'>
                 <div className="flex w-full justify-self-center font-medium items-center col-span-3 bg-gray-100 h-60 p-4 text-teal text-lg">
                     <Link to="/" className='hover:text-gentle-blue'>Home</Link>

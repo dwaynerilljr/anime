@@ -15,7 +15,7 @@ const AnimeSelection = ({ animes }) => {
                         Anime
                     </header>
                     <label htmlFor="sort">Sort By:</label>
-                    <select name="sort" id="" className="border-teal rounded-md border-2 ml-1">
+                    <select name="sort" id="" className="border-gentle-blue rounded-md border-2 ml-1">
                         <option value="recentlyAdded">Recently Added</option>
                         <option value="alphabetically">Alphabetically (A-Z)</option>
                     </select>

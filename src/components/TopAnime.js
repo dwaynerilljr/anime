@@ -8,7 +8,7 @@ const TopAnime = ({ animes }) => {
                 {animes.map(anime => {
                     if (anime.featured) {
                         return (
-                            <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center text-gentle-blue">
                                 <p className="text-xl mb-2">{anime.name}</p>
                                 <Link to={`/anime/show/${anime.id}`}><img src={anime.image} className="h-h-half hover:opacity-60" alt="" /></Link>
                             </div>
