@@ -5,6 +5,7 @@ export const ANIMES = [
         demographic: 'Shounen',
         type: 'Anime',
         image: "/assets/images/dbz.jpeg",
+        rating: [],
         comments: [
             {
                 id: 0,
@@ -106,7 +107,7 @@ export const ANIMES = [
     },
     {
         id: 9,
-        name: 'SSSS.Dynazenon',
+        name: 'Ssss.Dynazenon',
         demographic: 'Shounen',
         type: 'Anime',
         image: '/assets/images/dyna.jpeg',

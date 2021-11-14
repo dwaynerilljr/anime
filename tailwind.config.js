@@ -4,17 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'teal': '#10a3a2',
-        'gentle-blue': '#F72585',
-        'light-steel': '#B0B3B1',
-        'dark-blue': '#7209b7'
+        'primary': '#10a3a2',
+        'secondary': '#F72585',
+        'light-primary': '#e7f6f6',
+        'ternary': '#7209b7'
       },
       height: {
         'h-half': '50vh',
         '60': '60px'
       },
       fontFamily: {
-        'roboto': ["'Roboto', 'sans'"]
+        'bangers': ["'Bangers', 'sans'"],
+        'raleway': ["'Raleway', 'sans'"]
       },
       padding: {
         '52': '64px'
@@ -25,4 +26,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  coreplugins: {
+    divideStyle: true
+  }
 }
